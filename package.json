@@ -1,0 +1,71 @@
+{
+  "name": "blueauth-react",
+  "version": "0.7.1",
+  "description": "blueauth react library",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "dist/main/index.js",
+  "typings": "dist/module/index.d.ts",
+  "module": "dist/module/index.js",
+  "scripts": {
+    "build": "npm run build:ts",
+    "build:ts": "tsc -p tsconfig.json && tsc -p tsconfig.module.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "author": "Adrian Artiles",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "auth",
+    "authentication",
+    "blueauth"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kionin/blueauth-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kionin/blueauth-react/issues"
+  },
+  "homepage": "https://github.com/kionin/blueauth-react#readme",
+  "files": [
+    "dist/main",
+    "dist/module",
+    "src",
+    "!**/*.spec.*",
+    "!**/*.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^15.14.0",
+    "@types/react": "^17.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "dependencies": {
+    "blueauth-client": "^0.7.1"
+  }
+}
