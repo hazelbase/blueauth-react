@@ -66,6 +66,6 @@
     "react-dom": "^16.8.0 || ^17.0.0"
   },
   "dependencies": {
-    "blueauth-client": "^0.7.1"
+    "blueauth-client": "^0.7.3"
   }
 }
