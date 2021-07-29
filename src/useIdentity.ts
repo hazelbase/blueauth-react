@@ -25,6 +25,7 @@ export const useIdentity = (config?: Config): UseIdentityReturn => {
       const data = await clientBasic.getSelf();
       completeSetIdentity(data.whoami);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error('blueauth error', err);
       completeSetIdentity(null);
     }
@@ -51,12 +52,10 @@ export const useIdentity = (config?: Config): UseIdentityReturn => {
   const clientWrapped = blueauthClient({ ...wrappedConfig, ...config });
 
   useEffect(() => {
-    console.log('> blueauth.react useEffect firing');
     whoamiBasic();
 
     const handleStorageEvent = (event: StorageEvent) => {
       if (event.key !== 'blueauth.identity') return;
-      console.log('> blueauth.react storageEvent firing');
       const newIdentity = event.newValue;
       setIdentity(newIdentity ? JSON.parse(newIdentity) : null);
     };
