@@ -56,17 +56,17 @@ export default function Page() {
   if (!identity) {
     return (
       <div>
-        <h1>You are not logged in!</h1>
+        <h1>You are not signed in!</h1>
         <input
           placeholder="your@email.com"
           type="email"
           onChange={(event) => setEmail(event.target.value)}
         />
         <button
-          onClick={() => client.startEmailLogin({ identity: { email } })}
+          onClick={() => client.startEmailSignIn({ identity: { email } })}
           type="button"
         >
-          Send Log In Email
+          Send Sign In Email
         </button>
       </div>
     );
@@ -76,10 +76,10 @@ export default function Page() {
     <div>
       <h1>Welcome! Your email is {identity.email}!</h1>
       <button
-        onClick={() => client.logout()}
+        onClick={() => client.signOut()}
         type="button"
       >
-        Log Out
+        Sign Out
       </button>
     </div>
   );
