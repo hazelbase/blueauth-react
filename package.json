@@ -1,6 +1,6 @@
 {
   "name": "blueauth-react",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "blueauth react library",
   "engines": {
     "node": ">=10"
