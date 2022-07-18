@@ -1,7 +1,7 @@
 <p align="center">
    <br/>
    <a href="https://blueauth.io" target="_blank"><img width="150px" src="https://cdn.kacdn.org/file/kacdn1/blueauth/logo.png" /></a>
-   <h3 align="center"><a href="https://github.com/key-lab/blueauth">BlueAuth</a> React Library</h3>
+   <h3 align="center"><a href="https://github.com/hazelbase/blueauth">BlueAuth</a> React Library</h3>
 </p>
 
 <details open="open">
@@ -22,7 +22,7 @@ npm install --save blueauth-react
 # Features
 - Sync user authentication across all tabs
 - Get a React provider / context to access the authenticated user anywhere in the app
-- Comes with an optimized built-in [BlueAuth client](https://github.com/key-lab/blueauth-client), making this the only BlueAuth client library you need.
+- Comes with an optimized built-in [BlueAuth client](https://github.com/hazelbase/blueauth-client), making this the only BlueAuth client library you need.
 
 # Quick Start
 
@@ -88,4 +88,4 @@ export default function Page() {
 
 # Configuration
 
-You can pass a [BlueAuth client](https://github.com/key-lab/blueauth-client#documentation) configuration object to the `config` attribute.
+You can pass a [BlueAuth client](https://github.com/hazelbase/blueauth-client#documentation) configuration object to the `config` attribute.
